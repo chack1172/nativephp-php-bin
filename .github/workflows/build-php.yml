@@ -56,7 +56,7 @@ jobs:
         shell: bash
         if: matrix.os == 'windows-latest'
         run: | 
-          echo "SPC_URL=https://dl.static-php.dev/static-php-cli/spc-bin/nightly/spc-windows-x64.exe" >> $GITHUB_ENV
+          echo "SPC_URL=https://github.com/crazywhalecc/static-php-cli/releases/download/2.4.4/spc-windows-x64.exe" >> $GITHUB_ENV
           echo "SPC_BINARY=spc.exe" >> $GITHUB_ENV
 
       - name: Download SPC
